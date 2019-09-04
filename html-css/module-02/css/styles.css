@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    /* color: orange; */
+}
+
+
+body{
+    margin: 0;
+}
+
+.gren-text{
+    color: green
+}
+#main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.text-box> *{
+color: green;
+}
+
+.wraper{
+    width: 611px;
+    padding: 19px;
+}
+
+.wraper * {
+    color: #ffffff;
+    text-align: center;
+    font: 700 18px Verdana;
+    background-color: green;
+}
+
+header,
+footer {
+    padding: 40px 0;
+}
+main,
+aside {
+    display: inline-block;
+    padding: 190px 0;
+}
+
+header {
+    margin-bottom: 19px;
+}
+
+main {
+    width: 70%;
+    
+}
+
+aside {
+    width: 29%;
+}
+footer{
+    margin-top: 19px;
+}
