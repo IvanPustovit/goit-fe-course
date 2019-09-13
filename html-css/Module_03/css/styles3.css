@@ -1,176 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 html{
     box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
-main{
-    width: 900px;
+*{
+    margin: 0;
+}
+
+.container{
+    width: 901px;
     margin: 0 auto;
-    }
-
-header{
-    text-align: center;
-    padding-top: 68px;
+}
+.page-header{
     font-size: 0;
+    text-align: center;
     }
 a{
-    text-decoration: none
+    text-decoration: none;
+    color: none;
 }
-.header li{
+.navigation a:hover{
+    color: rgb(98, 98, 98);
+}
+.navigation li{
     display: inline-block;
-}
-.content{
-    font-size: 0;
-}
-section{
-    text-align: center;
+    margin-right: 102px;
     }
-.content article {
+
+    .navigation li:last-child{
+    margin-right: 0;
+    }
+.navigation li{
+    font-size: 14px;
+    padding-top: 77px;
+    height: 90px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: auto;
+}
+.navigation{
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.content-list li{
     display: inline-block;
-}
-
-.content_1 {
+    width: 420px;
     margin-right: 60px;
-}
-.content_3 {
-    margin-right: 60px;
-}
+    }
 
-.content_5 {
-    margin-right: 60px;
-}
-
-.image{
+    .content-list{
+    padding-inline-start: 0;
+    font-size: 0;
+        }
+        .content-list-item:nth-child(2n){
+            margin-right: 0;
+        }
+.content-list-image{
     padding-top: 105px;
 }
-.text{
-width: 420px;
-padding-top: 41px;
-}
 
-.lifestyle {
-    font-size: 14px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    line-height: 1.714;
-    text-align: center;
-    left: 290.798px;
-    top: 100.106px;
-    width: 71px;
-    height: 11px;
-    z-index: 70;
-    }
-.photodiary {
-    font-size: 14px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    line-height: 1.714;
-    text-align: center;
-    left: 491.2px;
-    top: 100.106px;
-    width: 88px;
-    height: 11px;
-    z-index: 69;
-    margin-left: 120px;
-}
-.music {
-    font-size: 14px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    line-height: 1.714;
-    text-align: center;
-    left: 661.212px;
-    top: 100.106px;
-    width: 43px;
-    height: 11px;
-    z-index: 68;
-    margin-left: 120px;
-}
-.travel {
-    font-size: 14px;
-    font-family: "Playfair Display";
-    color: rgb(98, 98, 98);
-    text-transform: uppercase;
-    line-height: 1.714;
-    text-align: center;
-    left: 802.316px;
-    top: 100.106px;
-    width: 52px;
-    height: 11px;
-    z-index: 67;
-    margin-left: 120px;
-}
-.lifestyle-content {
+
+
+.content-list-name {
     font-size: 14px;
     font-family: "Ubuntu";
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     line-height: 1.2;
-    left: 150px;
-    top: 501.149px;
-    width: 63px;
-    height: 11px;
-    z-index: 59;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.photodiary-content {
-    font-size: 14px;
-    font-family: "Ubuntu";
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    line-height: 1.2;
-    left: 150px;
-    top: 1111.149px;
-    width: 85px;
-    height: 11px;
-    z-index: 39;
+    height: 100%;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.title {
+.content-list-about {
     font-size: 30px;
-    font-family: "Playfair Display";
+    font-style: normal;
+    font-family: "Playfair Display regular";
     color: rgb(98, 98, 98);
-    line-height: 1.2;
-    width: 414px;
-    text-align: left;
-    }
+    height: 100%;
+    margin-bottom: 40px;
+}
 
-
-.text {
-    display: inline-block;
+.content-list-text{
     font-size: 14px;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display regular";
     color: rgb(98, 98, 98);
     line-height: 1.714;
     text-align: left;
-    margin: 0;
-    width: 414px;
-    height: auto;
-    z-index: 57;
 }
 
-button {
+.button {
     font-size: 20px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
-    line-height: 1.2;
-    padding: 22px 34px;
-}
-button{
+    width: 163px;
+    height: 60px;
+    padding: 0;
     text-align: center;
-    margin-bottom: 70px;
-    margin-top: 57px;
-    }
-
-button :hover{
-    color: aqua;
+    cursor: pointer;
+    
 }
+
+.button:hover{
+    background-color: bisque;
+}
+footer{
+    margin-top: 60px;
+    text-align-last: center;
+  }
+
