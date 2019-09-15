@@ -18,6 +18,7 @@ html{
 .page-header{
     font-size: 0;
     text-align: center;
+    padding: 77px 0 102px;
     }
 a{
     text-decoration: none;
@@ -36,13 +37,15 @@ a{
     }
 .navigation li{
     font-size: 14px;
-    padding-top: 77px;
     height: 90px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     text-transform: uppercase;
     vertical-align: middle;
     height: auto;
+}
+.navigation-link{
+    display: block;
 }
 .navigation{
     padding-inline-start: 0;
@@ -63,10 +66,9 @@ a{
             margin-right: 0;
         }
 .content-list-image{
-    padding-top: 105px;
+    margin-bottom: 30px;
+    
 }
-
-
 
 .content-list-name {
     font-size: 14px;
@@ -76,7 +78,7 @@ a{
     line-height: 1.2;
     height: 100%;
     margin-bottom: 30px;
-    margin-top: 30px;
+    
 }
 
 .content-list-about {
@@ -94,25 +96,26 @@ a{
     color: rgb(98, 98, 98);
     line-height: 1.714;
     text-align: left;
+    padding-bottom: 135px;
 }
 
 .button {
+    margin: 0 auto 70px;
+    text-align: center;
+    }
+
+.button-in {
     font-size: 20px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
     width: 163px;
     height: 60px;
     padding: 0;
-    text-align: center;
     cursor: pointer;
-    
 }
 
-.button:hover{
-    background-color: bisque;
+.button-in:hover{
+    background-color:lightgreen;
 }
-footer{
-    margin-top: 60px;
-    text-align-last: center;
-  }
+
 
