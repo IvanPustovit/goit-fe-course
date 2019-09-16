@@ -61,10 +61,10 @@ a{
     .content-list{
     padding-inline-start: 0;
     font-size: 0;
-        }
-        .content-list-item:nth-child(2n){
+    }
+    .content-list-item:nth-child(2n){
             margin-right: 0;
-        }
+    }
 .content-list-image{
     margin-bottom: 30px;
     
@@ -96,15 +96,21 @@ a{
     color: rgb(98, 98, 98);
     line-height: 1.714;
     text-align: left;
-    padding-bottom: 135px;
-}
+    }
 
-.button {
-    margin: 0 auto 70px;
-    text-align: center;
+.content-list-item:not(:nth-last-child(-n + 2)){
+    margin-bottom: 100px;
+    }
+
+button{
+    margin: 0 auto;
+    
     }
 
 .button-in {
+    display: block;
+    margin-bottom: 70px;
+    margin-top: 60px;
     font-size: 20px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
