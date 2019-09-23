@@ -148,7 +148,7 @@ img {
     opacity: 0.436;
 }
 
-.featured-list-item a:hover {
+.featured-list-item>a:hover p {
     background-color: rgb(26, 188, 156);
 }
 
