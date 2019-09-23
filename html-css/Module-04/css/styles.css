@@ -20,13 +20,14 @@ a{
     content: "";
     clear: both;
 }
-html{
+.container{
     width: 1110px;
     margin: 0 auto;
 }   
 
 header {
-    width: 100%;
+    width: 1110px;
+    margin: 0 auto;
     
 }
 .page-nav{
@@ -38,6 +39,7 @@ header {
 }
 
 .navigation {
+    display: block;
     float: right;
     width: 500px;
     margin:0;
@@ -46,14 +48,14 @@ header {
     list-style: none;
     }
 
-.navigation li{
+.navigation li {
     float: left;
     font-family: "OpenSans";
     color: rgb(26, 188, 156);
     font-weight: bold;
     text-transform: uppercase;
     }
-    .navigation li:not(:last-child) {
+    .navigation :not(:last-child) {
     margin-right: 35px;
     }
 
@@ -70,9 +72,15 @@ header {
     
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
 /* FEAYURED PRODUCTS */
 
-.FEATURED-PRODUCTS {
+.featured-products {
     padding-top: 104px;
     padding-bottom: 130px;
     font-size: 48px;
@@ -82,7 +90,7 @@ header {
     text-align: center;
 }
 
-.FEATURED-PRODUCTS::after {
+.featured-products::after {
     content: '';
     background-color: rgb(26, 188, 156);
     position: absolute;
@@ -120,7 +128,7 @@ header {
     margin-right: 0;
 }
 
-.featured-list-item-link,
+.featured-list-item-name,
 .featured-list-item-cash{
     float: left;
     width: 201px;
@@ -140,7 +148,7 @@ header {
     opacity: 0.436;
 }
 
-.featured-list>li:hover a{
+.featured-list-item a:hover {
     background-color: rgb(26, 188, 156);
 }
 
@@ -155,17 +163,19 @@ header {
     padding-top: 103px;
     padding-bottom: 118px;
 }
-
+.latest-news-block{
+    padding-bottom: 80px;
+}
 .latest-news::after{
     content: '';
     background-color: rgb(26, 188, 156);
     position: absolute;
     left:0;
     right: 0;
-    margin: auto;
+    margin: 0 auto;
     width: 164px;
     height: 7px;
-    bottom: -135px;
+    bottom: -435px;
 }
 .latest-news-block-list{
     padding: 0;
@@ -173,7 +183,6 @@ header {
     }
 .latest-news-block-list li{
     width: 350px;
-    height: 500px;
     list-style: none;
     float: left;
     
@@ -183,30 +192,35 @@ header {
     margin-right: 30px;
 }
 
+.latest-news-block-list-img{
+    margin-bottom: 10px;
+}
 .latest-news-block-list-item{
     font-size: 18px;
     font-family: "OpenSans";
     color: rgb(85, 82, 82);
-    width: 301px;
-    height: 44px;
-    padding-top: 10px;
+    margin-bottom: 40px;
+    
 }
 .latest-news-block-list-text{
     font-size: 14px;
     font-family: "Myriad Pro";
     color: rgb(85, 82, 82);
-    padding-top: 40px;
-    padding-bottom: 21px;
+    margin-bottom: 21px;
+    
 }
 
 .latest-news-block-list-button {
     border-radius: 3px;
     background-color: rgb(78, 198, 171);
-    width: 159px;
-    height: 51px;
+    width: 160px;
+    height: 50px;
     font-size: 16px;
     font-family: "Open Sans";
     color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    
 }
+
 
 
