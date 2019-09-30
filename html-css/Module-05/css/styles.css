@@ -12,13 +12,13 @@ html{
 }
 a{
     text-decoration: none;
-    color: none;
+    display: block;
 }
 
 /* Header nav */
 
-header{
-    width: 1170px;
+.conteiner{
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ header{
 .slider{
     position: relative;
     height: 600px;
-    width: 1600px;
+    /* width: 1600px; */
     margin: auto;
     background-color:  rgb(50, 50, 50);
     
@@ -97,7 +97,6 @@ img{
     border: none;
     width: 103px;
     height: 104px;
-    background-color: rgb(26, 188, 156);
     top: 50%;
     transform: translateY(-50%);
     
@@ -105,12 +104,13 @@ img{
 }
 .button-prev{
     left: 245px;
-    color: white;
+    background-image: url(/img/btn-prev.png);
+    
     
 }
 .button-next{
     right: 245px;
-    color: white;
+    background-image: url(/img/btn-next.png);
     
 }
 .slider-button-text{
@@ -165,8 +165,11 @@ img{
     font: 100 24px Roboto;
 }
 .new{
-    width: 1110px;
     margin: 0 auto;
+    background-color: rgb(233, 240, 253);
+    padding-top: 103px;
+    padding-bottom: 118px;
+        
 }
 .news-collection{
     position: relative;
@@ -175,19 +178,18 @@ img{
     color: rgb(85, 82, 82);
     text-transform: uppercase;
     text-align: center;
-    padding-top: 103px;
-    padding-bottom: 118px;
+    margin-bottom: 120px;
+    
 }
 .news-collection::after{
     content: '';
     background-color: rgb(26, 188, 156);
-    position: absolute;
-    left:0;
-    right: 0;
     margin: 0 auto;
     width: 164px;
     height: 7px;
     bottom: 100px;
+    display: block;
+    margin-top: 30px;
 }
 
 .news-collection-list-item-img{
@@ -196,11 +198,14 @@ img{
     color: none;
 }
 .news-collection-list{
+    width: 1110px;
+    display: block;
     list-style: none;
     padding: 0;
     font-size: 18px;
     font-family: "Roboto";
-    margin-bottom: 100px;
+    margin: 0 auto;
+    
     
 }
 .news-collection-list li{
@@ -208,7 +213,6 @@ img{
     width: 255px;
     height: 361px;
     margin-right: 30px;
-    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
@@ -256,9 +260,49 @@ img{
     height: 261px;
     z-index: -0.5;
     opacity: 0;
+    padding-top: 79px;
 }
 
-.shop{
+.icon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.like{
+    background-image: url(/img/111.png);
+}
+.sent{
+    background-image: url(/img/sent.png);
+}
+.time{
+    background-image: url(/img/time.png);
+}
+
+
+.icon-shop{
+    height: 50px;
+    width: 165px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(/img/add\ to\ cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon:hover,
+.icon-shop:hover{
+    background-color: aqua;
+}
+.hover-effect:hover{
+    opacity: 1;
+    
+}
+
+/* .shop{
     width: 166px;
     border: 1px solid;
     margin: 0 auto;
@@ -299,6 +343,7 @@ img{
 .hover-effect:hover{
     opacity: 1;
     
-}
+} */
+
 
 
