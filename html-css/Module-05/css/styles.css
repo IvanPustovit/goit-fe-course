@@ -265,6 +265,7 @@ img{
 }
 
 .icon{
+    content: '';
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -275,29 +276,34 @@ img{
     
 }
 .like{
-    background-image: url(/img/111.png);
+    background-image: url(../img/111.png);
 }
 .sent{
-    background-image: url(/img/sent.png);
+    background-image: url(../img/sent.png);
 }
 .time{
-    background-image: url(/img/time.png);
+    background-image: url(../img/time.png);
 }
 
 
 .icon-shop{
+    content: '';
     height: 50px;
     width: 165px;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(/img/add\ to\ cart.png);
+    background-image: url(../img/add\ to\ cart.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.icon:hover,
-.icon-shop:hover{
+.icon:hover{
     background-color: aqua;
 }
+
+.icon-shop:hover{
+    background-color: rgb(78, 76, 76);
+}
+
 .hover-effect:hover{
     opacity: 1;
     
