@@ -265,7 +265,7 @@ img{
 }
 
 .icon{
-    content: '';
+    /* content:''; */
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -276,6 +276,7 @@ img{
     
 }
 .like{
+    content:'';
     background-image: url(../img/111.png);
 }
 .sent{
