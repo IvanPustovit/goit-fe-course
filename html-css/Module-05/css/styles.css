@@ -75,7 +75,6 @@ a{
 .slider{
     position: relative;
     height: 600px;
-    /* width: 1600px; */
     margin: auto;
     background-color:  rgb(50, 50, 50);
     
@@ -91,9 +90,9 @@ img{
 .slider-button{
     position: absolute;
     display: inline-block;
-    font-size: 100px;
+    /* font-size: 100px;
     line-height: 0;
-    font-weight: 100;
+    font-weight: 100; */
     border: none;
     width: 103px;
     height: 104px;
@@ -103,12 +102,14 @@ img{
     
 }
 .button-prev{
+    content: '';
     left: 245px;
     background-image: url(../img/btn-prev.png);
     
     
 }
 .button-next{
+    content: '';
     right: 245px;
     background-image: url(../img/btn-next.png);
     
