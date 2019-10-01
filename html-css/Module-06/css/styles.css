@@ -13,7 +13,7 @@ body{
     margin: 0;
 }
 
-.conteiner{
+.container{
     margin: 0 auto;
     padding-top: 28px;
     padding-bottom: 130px;
@@ -42,7 +42,7 @@ body{
     
 }
 .navigation-iteam li:not(:last-child){
-    padding-right: 57px;
+    margin-right: 57px;
 }
 
 .navigation{
@@ -73,6 +73,7 @@ Amazing Services */
 }
 
 .service-iteam-text{
+    display: block;
     font: bold 30px Montserrat;
     margin-bottom: 65px;
 }
@@ -93,7 +94,6 @@ Amazing Services */
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-between;
-    margin-left: 30px;
     text-align: left;
     
     
@@ -107,12 +107,14 @@ Amazing Services */
 }
 
 .service-list-title{
-    width: 355px;
     padding-bottom: 20px;
     text-transform: uppercase;
     font: 400 14px Montserrat;
     color: #333333;
     
+}
+.service-list-alarm p{
+    font: 400 15px Roboto;
 }
 
 .service-list-alarm{
@@ -193,6 +195,7 @@ Amazing Services */
 }
 .team-list-foto-text{
     font: italic 15px Roboto;
+    color: #999999
 }
 
 /* hover-effect */
@@ -254,10 +257,12 @@ Amazing Services */
 
 .hover-effect:hover{
     box-shadow:
-    12px 12px rgb(149, 225, 211);
-    transform: translateY(-12px);
+    10px 10px rgb(149, 225, 211);
+    transform: translateY(-10px);
     transition-timing-function: linear;
     transition-duration: 200ms;
+    position: absolute;
+    left: -10px;
     
 }
 .social-link:hover{
@@ -269,9 +274,10 @@ Amazing Services */
 /* FOOTER */
 
 .footer{
+    border-top: 1px solid rgb(229, 229, 229);
     display: flex;
     justify-content: space-between;
-    margin: 11px 0;
+    padding: 11px 0;
 }
 form{
     border-style: solid;
@@ -313,6 +319,7 @@ input[type="text"]{
     
     .footer-text{
         font: 400 14px Montserrat;
+        padding-top: 10px
     }
 
     .footer-text-color{
