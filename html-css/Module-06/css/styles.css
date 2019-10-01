@@ -157,6 +157,7 @@ Amazing Services */
 }
 
 .team-iteam-text{
+    display: block;
     font: bold 30px Montserrat;
     margin-bottom: 45px;
 }
