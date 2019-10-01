@@ -116,29 +116,29 @@ Amazing Services */
 }
 
 .service-list-alarm{
-    list-style-image: url(/img/ALARM.png);
+    list-style-image: url(../img/ALARM.png);
     
 }
 
 .service-list-book{
-    list-style-image: url(/img/BOOK\ 2.png);
+    list-style-image: url(../img/BOOK\ 2.png);
     
     
 }
 .service-list-line{
-    list-style-image: url(/img/LINE.png);
+    list-style-image: url(../img/LINE.png);
     
 }
 .service-list-home{
-    list-style-image: url(/img/HOME.png);
+    list-style-image: url(../img/HOME.png);
     
 }
 .service-list-computer{
-    list-style-image: url(/img/COMPUTER\ .png);
+    list-style-image: url(../img/COMPUTER\ .png);
     
 }
 .service-list-img{
-    list-style-image: url(/img/IMAGE.png);
+    list-style-image: url(../img/IMAGE.png);
     
 }
 
