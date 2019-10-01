@@ -49,7 +49,7 @@ a{
 .navigation li {
     float: left;
     font-family: "OpenSans";
-    color: rgb(26, 188, 156);
+    color: rgb(31, 32, 32);
     font-weight: bold;
     text-transform: uppercase;
     }
@@ -65,9 +65,12 @@ a{
 .logo {
     font-size: 30px;
     font-family:"Roboto";
-    color: rgb(26, 188, 156);
+    color: rgb(37, 39, 39);
     text-transform: uppercase;
     
+}
+.logo::first-letter{
+    color: rgb(26, 188, 156);
 }
 
 /* AFFORDABLE PARIS TOURS */
@@ -244,8 +247,9 @@ img{
     opacity: 0.436;
 }
 
-.news-collection-list-item>a:hover p {
+.news-collection-list-item:hover p{
     background-color: rgb(26, 188, 156);
+    cursor: pointer;
     
 }
 
@@ -310,48 +314,21 @@ img{
     
 }
 
-/* .shop{
-    width: 166px;
-    border: 1px solid;
+footer{
+    
+    background-color: rgb(50, 50, 50);
     margin: 0 auto;
-    color: white;
-    margin-top: 8px;
+    padding: 0;
     text-align: center;
     
 }
-.icon{
-    margin: 0 auto;
+
+.footer-text{
     color: white;
-    font-size: 50px;
-    border: 1px solid;
-    margin-top: 81px;
-    
-}
-.icon:hover{
-    background-color: aqua;
-}
-    
-
-.shop-icon{
-    display: inline;
-    font-size: 30px;
-    color: white;
-}
-.shop:hover{
-    background-color: rgb(78, 76, 76);
+    font: 400 16px OpenSans;
+    padding: 35px 0;
 }
 
-.shop-icon-text{
-    display: inline;
-    inline-size: 0;
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase;
+.footer-color{
+    color: rgb(26, 188, 156)
 }
-.hover-effect:hover{
-    opacity: 1;
-    
-} */
-
-
-
