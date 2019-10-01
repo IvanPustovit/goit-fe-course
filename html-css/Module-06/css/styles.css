@@ -1,0 +1,321 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1200px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+}
+
+.conteiner{
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 130px;
+}
+
+.logo{
+    color: #95e1d3;
+    font-size: 30px;
+    text-decoration: none;;
+}
+.navigation-iteam li{
+    list-style: none;
+    
+}
+
+.navigation-iteam-link:hover{
+    color: #f38181;
+    text-decoration: underline;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+.navigation-iteam{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+}
+.navigation-iteam li:not(:last-child){
+    padding-right: 57px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #95e1d3;
+    
+}
+
+
+.navigation-iteam-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #95e1d3;
+}
+
+/* We work with
+Amazing Services */
+
+.service{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-iteam{
+    font: italic 24px Kaushan Script;
+}
+
+.service-iteam-text{
+    font: bold 30px Montserrat;
+    margin-bottom: 65px;
+}
+
+.service-iteam-text::after{
+    content: '';
+    background-color: #f38181;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    bottom: 100px;
+    display: block;
+    margin-top: 45px;
+}
+
+.service-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 30px;
+    text-align: left;
+    
+    
+}
+
+.service-list li{
+    width: 355px;
+    padding-left: 30px;
+    margin-bottom: 103px;
+    vertical-align: top;
+}
+
+.service-list-title{
+    width: 355px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font: 400 14px Montserrat;
+    color: #333333;
+    
+}
+
+.service-list-alarm{
+    list-style-image: url(/img/ALARM.png);
+    
+}
+
+.service-list-book{
+    list-style-image: url(/img/BOOK\ 2.png);
+    
+    
+}
+.service-list-line{
+    list-style-image: url(/img/LINE.png);
+    
+}
+.service-list-home{
+    list-style-image: url(/img/HOME.png);
+    
+}
+.service-list-computer{
+    list-style-image: url(/img/COMPUTER\ .png);
+    
+}
+.service-list-img{
+    list-style-image: url(/img/IMAGE.png);
+    
+}
+
+/* Team */
+
+.team{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 86px;
+}
+
+.team-iteam{
+    font: italic 24px Kaushan Script;
+}
+
+.team-iteam-text{
+    font: bold 30px Montserrat;
+    margin-bottom: 45px;
+}
+
+.team-iteam-text::after{
+    content: '';
+    background-color: #f38181;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    bottom: 100px;
+    display: block;
+    margin-top: 45px;
+}
+
+.team-iteam-liric{
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    font: 400 15px Roboto;
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.team-list-foto-person{
+    padding-top: 30px;
+    font: 400 14px Montserrat;
+    text-transform: uppercase;
+}
+.team-list-foto-text{
+    font: italic 15px Roboto;
+}
+
+/* hover-effect */
+
+.relative{
+    position: relative;
+}
+.hover-effect{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    }
+.social{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 470px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%)
+}
+
+
+.social li,.social-link{
+    border: 0.1px solid rgb(243,129,129);
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    background-color: rgb(252, 227, 138);
+}
+
+.facebook{
+        background-image: url(../img/facebook.png);
+}
+
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+.pinterest{
+    background-image: url(../img/pinterest.png);
+}
+.instagram{
+    background-image: url(../img/instagram.png);
+}
+
+.team-list-foto:hover .hover-effect{
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    opacity: 1;
+}
+
+.hover-effect:hover{
+    box-shadow:
+    12px 12px rgb(149, 225, 211);
+    transform: translateY(-12px);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    
+}
+.social-link:hover{
+    background-color:rgb(149, 225, 211);
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 11px 0;
+}
+form{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    height: 40px;
+    
+}
+
+input[type="text"]{
+    border: none;
+    margin: 0;
+    outline: none;
+    height: 40px;
+    vertical-align: top;
+    font-size: 18px;
+    font-style: italic;
+    font-family: Roboto;
+    padding: 0;
+    width: 229px;
+    opacity: 0.5;
+    }
+
+    button[type="submit"]{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 145px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: rgb(149, 225, 211);
+    cursor: pointer;
+    transition: color .2s;
+    }
+    
+    .footer-text{
+        font: 400 14px Montserrat;
+    }
+
+    .footer-text-color{
+        color: #f38181;
+    }
+    
