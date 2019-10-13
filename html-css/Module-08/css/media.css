@@ -1,0 +1,72 @@
+@media screen and (min-width:768px){
+    .container{
+        margin: 0 auto;
+        background-image: url(../img/tablet.png);
+        height: 700px;
+        background-repeat: no-repeat;
+        width: 768px;
+        
+    }
+    .sign{
+        justify-content:center;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+    .logo{
+    order: 0;
+    padding-top: 10px;
+    
+    }
+    .login-in{
+        margin-left: auto;
+    }
+    .title-h1{
+        padding-top: 150px;
+        font-size: 52px;
+    }
+    .title-h2{
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .title-button{
+        width: 230px;
+    }
+    .card{
+        width: 492px;
+        
+    }
+    .card-iteam{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .card-iteam li{
+        width: 220px;
+    }
+    .card-button{
+        width: 197px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .container{
+        margin: 0 auto;
+        background-image: url(../img/desktop.png);
+        height: 700px;
+        background-repeat: no-repeat;
+        width: 1440px;
+        
+    }
+    .sign{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .card{
+        width: 942px;
+        }
+    .card-title{
+        margin-bottom: 40px;
+    }
+}
