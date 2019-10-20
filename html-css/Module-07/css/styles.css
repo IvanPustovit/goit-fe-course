@@ -130,14 +130,13 @@ a{
 }
 
 .services-iteam-span{
-    display: block;
     font-family: 'DroidSerif italic';
     font-weight: normal;
     font-style: italic;
     font-size: 16px;
     text-transform: none;
     color: #777777;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 80px;
 }
 
@@ -152,6 +151,7 @@ a{
     font-style: normal;
     font-size: 18px;
     list-style: none;
+    padding: 0;
 }
 .services-list-img{
     border: 3px solid #fed136;
@@ -161,49 +161,42 @@ a{
     padding: 17px;
 }
 
-/* .comerce,
+.comerce,
 .responsive,
 .security{
-    position: relative;
-} */
-/* .comerce::before,
-.responsive::before,
-.security::before{
-    content: '';
-    background-position: center;
     width: 75px;
     height: 75px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    top: -102px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     border: 3px solid #fed136;
     border-radius: 50%;
-    
-} */
-/* .comerce::before{
+    background-position: center;
+}
+.comerce{
     background-image: url(../img/Icon-Basket.png);
 }
-.responsive::before{
+.responsive{
     background-image: url(../img/Icon-Laptop.png);
 }
-.security::before{
+.security{
     background-image: url(../img/Icon-Locked.png);
-} */
+}
 
 .services-list-text{
-    display: block;
     font-family: 'Roboto Slab';
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     color: #777777;
-    margin-top: 18px;
     line-height: 1.5;
 }
+.services-list-iteam{
+    padding: 20px 0;
+}
 
+h3,p{
+    margin: 0;
+}
     /* form */
 
 .contact{
@@ -225,7 +218,6 @@ a{
     }
 
 .contact-us-text{
-    display: block;
     font-family: 'DroidSerif italic';
     font-weight: normal;
     font-style: italic;
