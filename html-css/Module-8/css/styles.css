@@ -29,6 +29,7 @@
 
 body{
     margin: 0 auto;
+    text-align: center;
 }
     
 
@@ -44,11 +45,10 @@ body{
     background-color: #1a1915;
     height: 540px;
     background-repeat: no-repeat;
-    width: 320px;
+    width: 300px;
 }
 
 .sign a{
-    display: block;
     text-decoration:none;
     list-style: none;
     color: #ffffff;
@@ -62,16 +62,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
     
 }
 .login{
     display:inline-block;
-    width: 94px;
-    height: 40px;
     font-size: 14px;
     text-align: center;
-    padding-top: 10px;
+    line-height: 14px;
+    padding: 10px 15px;
     
 }
 .login:hover{
@@ -82,10 +81,11 @@ body{
 }
 .logo{
     order: 1;
-    padding-top: 127px;
+    padding-top: 117px;
     font-size: 20px;
     text-transform: uppercase;
-
+    flex-wrap: wrap;
+line-height: 20px;
 }
 
 .title-h1{
@@ -93,11 +93,15 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
+    line-height: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 35px;
+}
+.title-h1-s{
+    display: block;
 }
 
 .title-h2{
@@ -108,7 +112,7 @@ body{
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    padding: 20px 0
+    padding: 20px 40px;
 }
 
 .title-button{
@@ -140,8 +144,8 @@ body{
     font-weight: 700;
     font-size: 22px;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    padding-bottom: 20px;
 }
 .card-iteam{
     padding: 0;
@@ -152,6 +156,9 @@ body{
     list-style: none;
     text-align: center;
     
+}
+h3,p{
+    margin: 0;
 }
 .tv,
 .colb,
@@ -199,12 +206,16 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    line-height: 14px;
+    padding: 20px 0;
 }
 .card-text{
     font-family: 'Roboto';
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 30px;
 
 }
 .card-button{
