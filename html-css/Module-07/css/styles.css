@@ -81,6 +81,7 @@ a{
     text-decoration: none;
     list-style: none;
     cursor: pointer;
+    color: #222222;
     }
 
 .navigation-iteam{
@@ -96,6 +97,7 @@ a{
     list-style: none;
     justify-content: space-around;
     width: 485px;
+    
 }
 .navigation-iteam a:hover{
     color: #fed136;
@@ -123,7 +125,7 @@ a{
     text-transform: uppercase;
     font-size: 40px;
     margin: 0;
-    margin-bottom: 165px;
+    margin-bottom: 20px;
 
 }
 
@@ -135,6 +137,8 @@ a{
     font-size: 16px;
     text-transform: none;
     color: #777777;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .services-list{
@@ -147,14 +151,22 @@ a{
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
+    list-style: none;
+}
+.services-list-img{
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    padding: 17px;
 }
 
-.comerce,
+/* .comerce,
 .responsive,
 .security{
     position: relative;
-}
-.comerce::before,
+} */
+/* .comerce::before,
 .responsive::before,
 .security::before{
     content: '';
@@ -170,8 +182,8 @@ a{
     border: 3px solid #fed136;
     border-radius: 50%;
     
-}
-.comerce::before{
+} */
+/* .comerce::before{
     background-image: url(../img/Icon-Basket.png);
 }
 .responsive::before{
@@ -179,7 +191,7 @@ a{
 }
 .security::before{
     background-image: url(../img/Icon-Locked.png);
-}
+} */
 
 .services-list-text{
     display: block;
@@ -225,7 +237,6 @@ a{
 .form-submit{
     display: flex;
     width: 940px;
-    height: 307px;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
@@ -261,15 +272,16 @@ a{
     height: 214px; 
     margin-left: 30px;
     vertical-align: bottom;
-    padding: 0 0 150px;
+    padding-top: 10px;
     padding-left: 21px;
     
 }
     
 
 .button{
+    border: none;
     border-radius: 3px;
-    background-color: rgb(254, 209, 54);
+    background-color: #222222;
     width: 240px;
     height: 66px;
     margin: 0 auto;
@@ -280,6 +292,10 @@ a{
     font-style: normal;
     color: #ffffff;
     text-transform: uppercase;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(254, 209, 54);
 }
 
 .form-submit-message:invalid,
