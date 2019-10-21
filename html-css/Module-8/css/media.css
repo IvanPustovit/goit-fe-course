@@ -1,5 +1,5 @@
 @media screen and (min-width:768px){
-    .container{
+    .main-header{
         margin: 0 auto;
         background-image: url(../img/tablet.png);
         height: 700px;
@@ -55,7 +55,7 @@
 }
 
 @media screen and (min-width:960px){
-    .container{
+    .main-header{
         margin: 0 auto;
         background-image: url(../img/desktop.png);
         height: 700px;

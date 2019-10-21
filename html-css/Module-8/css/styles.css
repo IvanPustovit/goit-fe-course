@@ -39,7 +39,7 @@ body{
     box-sizing: border-box;
 }
 
-.container{
+.main-header{
     margin: 0 auto;
     background-image: url(../img/Vector\ Smart\ Object.png);
     background-color: #1a1915;
@@ -66,6 +66,7 @@ body{
     
 }
 .login{
+    border: 2px solid rgba(255, 255, 255, 0); 
     display:inline-block;
     font-size: 14px;
     text-align: center;
@@ -145,7 +146,7 @@ line-height: 20px;
     font-size: 22px;
     text-align: center;
     margin: 0;
-    padding-bottom: 20px;
+    
 }
 .card-iteam{
     padding: 0;
@@ -157,9 +158,11 @@ line-height: 20px;
     text-align: center;
     
 }
+
 h3,p{
     margin: 0;
 }
+
 .tv,
 .colb,
 .caffe,
@@ -235,6 +238,9 @@ h3,p{
     background-color: rgb(255, 255, 255);
 }
 
-
+.card-button:hover{
+    background-color: #ff4e50;
+    color: #1a1915;
+}
 
 
