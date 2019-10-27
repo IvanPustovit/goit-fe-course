@@ -1,0 +1,59 @@
+@media screen and (min-width:768px){
+    .main-header{
+        background-image: url(../img/tablet.png);
+        height: 700px;
+    }
+    .container{
+        width: 748px;
+    }
+
+    .sign{
+        padding-top: 40px;
+    }
+    .logo{
+    padding-top: 10px;
+    text-align: left;
+    }
+    .title-h1{
+        padding-top: 150px;
+        font-size: 52px;
+        line-height: 52px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 40px;
+    }
+    .title-h2{
+        font-size: 24px;
+        padding: 0;
+        padding-bottom: 35px;
+    }
+    .title-button{
+        width: 230px;
+    }
+    
+    .card-iteam{
+        width: 492px;
+    }
+    .card-iteam li{
+        width: 220px;
+    }
+    .card-button{
+        width: 197px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .main-header{
+        background-image: url(../img/desktop.png);
+        height: 700px;
+    }
+    .container{
+        width: 940px;
+    }
+    .card-iteam{
+        width: 940px;
+    }
+    .card-title{
+        margin-bottom: 40px;
+    }
+}
