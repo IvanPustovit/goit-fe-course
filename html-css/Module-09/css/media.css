@@ -56,4 +56,11 @@
     .card-title{
         margin-bottom: 40px;
     }
+    .title-h1{
+        width: 500px;
+        font-size: 50px;
+        /* padding-left: 0;
+        padding-right: 0;
+         */
+    }
 }
