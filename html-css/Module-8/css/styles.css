@@ -45,9 +45,13 @@ body{
     background-color: #1a1915;
     height: 540px;
     background-repeat: no-repeat;
-    width: 300px;
-}
+    background-position: center;
+    }
 
+.container{
+    width: 270px;
+    margin: 0 auto;
+}
 .sign a{
     text-decoration:none;
     list-style: none;
@@ -86,24 +90,24 @@ body{
     font-size: 20px;
     text-transform: uppercase;
     flex-wrap: wrap;
-line-height: 20px;
+    line-height: 20px;
 }
 
 .title-h1{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 35px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     margin: 0 auto;
     padding-top: 35px;
 }
-.title-h1-s{
+/* .title-h1-s{
     display: block;
-}
+} */
 
 .title-h2{
     font-family: 'Roboto';
@@ -113,7 +117,7 @@ line-height: 20px;
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 20px;
 }
 
 .title-button{
@@ -136,8 +140,8 @@ line-height: 20px;
 .card{
     padding-top: 70px;
     padding-bottom: 55px;
-    width: 270px;
-    margin: 0 auto;
+    /* width: 270px; */
+    /* margin: 0 auto; */
 }
 .card-title{
     font-family: 'Montserrat';
@@ -147,11 +151,14 @@ line-height: 20px;
     text-align: center;
     margin: 0;
     
+    
 }
 .card-iteam{
     padding: 0;
+    padding-top: 20px;
     width: 220px;
     margin: 0 auto;
+    justify-content: center;
 }
 .card-iteam li{
     list-style: none;
@@ -225,7 +232,7 @@ h3,p{
     display: block;
     margin: 0 auto;
     padding: 0;
-    margin-top: 30px;
+    /* margin-top: 10px; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
