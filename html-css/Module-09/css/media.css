@@ -32,10 +32,11 @@
     }
     
     .card-iteam{
-        width: 492px;
+        width: 500px;
     }
-    .card-iteam li{
+    .card-iteam-list{
         width: 220px;
+        flex-basis: auto;
     }
     .card-button{
         width: 197px;

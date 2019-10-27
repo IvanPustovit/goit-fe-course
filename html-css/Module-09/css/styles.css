@@ -106,17 +106,17 @@ body{
 }
 
 .title-button{
-    display: block;
-    width: 280px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(255, 78, 80);
     border: 0 solid;
-    margin: 0 auto;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    
+}
+.title-button:hover{
+    background-color: rgb(255, 78, 80);
     color: #ffffff;
 }
 
@@ -134,15 +134,19 @@ body{
     text-align: center;
 }
 .card-iteam{
+    width: 220px;
+    padding-top: 20px;
+}
+/* .card-iteam{
     padding: 0;
     padding-top: 20px;
     width: 220px;
     margin: 0 auto;
-}
-.card-iteam li{
+} */
+/* .card-iteam li{
     list-style: none;
     text-align: center;
-}
+} */
 
 h3,p{
     margin: 0;
@@ -203,7 +207,9 @@ h3,p{
     font-style: normal;
     font-size: 14px;
     line-height: 14px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    width: 220px;
+    margin: 0 auto;
 
 }
 .card-button{
