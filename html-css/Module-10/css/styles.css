@@ -66,7 +66,7 @@ h2{
 }
 .page-header__container{
     padding-top: 35px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 165px;
 }
@@ -81,6 +81,9 @@ h2{
     .page-header {
     background-image:url(../img/header@2x.png)
     }
+}
+.site-navigation{
+    list-style: none;
 }
 
 .site-navigation__link:hover{
@@ -109,11 +112,11 @@ h2{
     font-size: 30px;
     line-height: 30px;
 }
-.page-header__title{
+/* .page-header__title{
     font-size: 72px;
     line-height: 75px;
     
-} 
+}  */
 .site-logo_decoration{
     text-transform: none;
 }
@@ -188,6 +191,7 @@ Amazing Services */
     font: 400 14px Montserrat;
     color: #333333;
     margin: 0;
+    text-align: left;
     
 }
 .list__text{
@@ -195,6 +199,7 @@ Amazing Services */
     color: #999999;
     padding-right: 80px;
     margin: 0;
+    text-align: left;
 }
 .list{
     flex-wrap: wrap;
@@ -205,29 +210,29 @@ Amazing Services */
     }
 
 
-.list__element_alarm{
+.list__element--alarm{
     list-style-image: url(../img/ALARM.svg);
     
 }
 
-.list__element_book{
+.list__element--book{
     list-style-image: url(../img/BOOK.svg);
     
     
 }
-.list__element_line{
+.list__element--line{
     list-style-image: url(../img/LINE.svg);
     
 }
-.list__element_home{
+.list__element--home{
     list-style-image: url(../img/HOME.svg);
     
 }
-.list__element_computer{
+.list__element--computer{
     list-style-image: url(../img/COMPUTER.svg);
     
 }
-.list__element_img{
+.list__element--img{
     list-style-image: url(../img/IMAGE.svg);
     
 }
@@ -253,11 +258,13 @@ Amazing Services */
 
 .list__title_mod{
     padding-top: 30px;
+    text-align: center;
     }
 .list__text_mod{
     font: italic 15px Roboto;
     padding: 0;
-    margin: 0 auto;
+    text-align: center;
+    
 }
 
 /* hover-effect */
@@ -297,17 +304,17 @@ Amazing Services */
     background-color: rgb(252, 227, 138);
 }
 
-.social__link_facebook{
+.social__link--facebook{
         background-image: url(../img/facebook.svg);
 }
 
-.social__link_twitter{
+.social__link--twitter{
     background-image: url(../img/twitter.svg);
 }
-.social__link_pinterest{
+.social__link--pinterest{
     background-image: url(../img/pinterest.svg);
 }
-.social__link_instagram{
+.social__link--instagram{
     background-image: url(../img/instagram.svg);
 }
 .list__element:hover .list__element_hover{
