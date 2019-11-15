@@ -12,17 +12,17 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+# # Build results
+# [Dd]ebug/
+# [Dd]ebugPublic/
+# [Rr]elease/
+# [Rr]eleases/
+# x64/
+# x86/
+# bld/
+# [Bb]in/
+# [Oo]bj/
+# [Ll]og/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -41,9 +41,9 @@ Generated\ Files/
 TestResult.xml
 
 # Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
+# [Dd]ebugPS/
+# [Rr]eleasePS/
+# dlldata.c
 
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
@@ -80,7 +80,7 @@ StyleCopReport.xml
 *.log
 *.vspscc
 *.vssscc
-.builds
+# .builds
 *.pidb
 *.svclog
 *.scc
@@ -182,7 +182,7 @@ PublishScripts/
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
+# !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
@@ -309,10 +309,10 @@ __pycache__/
 *.jmconfig
 
 # BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
+# *.btp.cs
+# *.btm.cs
+# *.odx.cs
+# *.xsd.cs
 
 # OpenCover UI analysis results
 OpenCover/
