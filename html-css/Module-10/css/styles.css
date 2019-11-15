@@ -1,3 +1,13 @@
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
 @font-face{
     font-family: 'Kaushan Script';
     src: url(../font/KaushanScript-Regular.ttf) format('truetype');
@@ -182,7 +192,8 @@ Amazing Services */
 
 /* section-list */
 
-.list__element{
+.list__element,
+.list__element-card{
     padding-bottom: 100px;
 }
 .list__title{
@@ -283,7 +294,6 @@ Amazing Services */
     opacity: 0;
     }
 .social{
-    /* display: flex; */
     list-style: none;
     width: 100%;
     height: 470px;
@@ -317,7 +327,7 @@ Amazing Services */
 .social__link--instagram{
     background-image: url(../img/instagram.svg);
 }
-.list__element:hover .list__element_hover{
+.list__element-card:hover .list__element_hover{
     transition-timing-function: linear;
     transition-duration: 200ms;
     opacity: 1;
