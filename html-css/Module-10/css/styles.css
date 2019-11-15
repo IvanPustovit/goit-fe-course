@@ -1,43 +1,77 @@
-/* body{
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 1200px;
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url(../font/KaushanScript-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-*{
-    margin: 0;
-} */
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .container{
+    max-width: 1201px;
     margin: 0 auto;
     padding: 0;
     
 }
-
-
+h2{
+    margin: 0;
+    padding: 0;
+}
 .link{
+    display: block;
     text-decoration: none;
     list-style: none;
     text-transform: uppercase;
     color: #ffffff;
-}
+    }
 .text{
     text-align: center;
     display: block;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.section{
+    margin: 0 auto;
+    max-width: 1201px;
+
+}
+.m0{
+    margin: 0;
 }
 
 /* HEADER */
 
 .page-header{
-    background-image: linear-gradient(0deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../img/headerbg-min.png) ;
+    background-image: url(../img/header.png);
     height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+.page-header__container{
+    padding-top: 35px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 165px;
+}
+.site-navigation__link:not(:last-child){
+    margin-right: 55px;
     
 }
 
@@ -45,27 +79,8 @@
 (min-resolution: 192dpi) 
 {
     .page-header {
-    background-image: linear-gradient(0deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%),url(../img/headerbg.png)
+    background-image:url(../img/header@2x.png)
     }
-}
-
-.page-header__container{
-    padding-top: 35px;
-}
-
-.site-logo{
-    font-size: 30px;
-    line-height: 30px;
-}
-.site-logo_decoration{
-    text-transform: none;
-}
-.site-logo_decoration:hover{
-    color: #ffffff;
-    text-decoration: none;
-}
-.site-navigation__link_relative{
-    position: relative;
 }
 
 .site-navigation__link:hover{
@@ -85,39 +100,73 @@
     left: 0;
     right: 0;
 }
-.site-navigation{
-    font-size: 14px;
-    
+
+.site-navigation__link_relative{
+    position: relative;
 }
-.site-header{
-    padding-bottom: 165px;
+.site-logo{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
 }
 .page-header__title{
     font-size: 72px;
-    line-height: 72px;
+    line-height: 75px;
     
+} 
+.site-logo_decoration{
+    text-transform: none;
+}
+
+.page-header__title_creative{
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #ffffff;
+}
+.page-header__title2_welcome{
+    font-family: 'Montserrat';
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 821px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding-top: 45px;
+    padding-bottom: 125px;
+
+}
+
+.page-header__btn_learn{
+    width: 160px;
+    height: 40px;
+    background: none;
+    border: 3px solid #ffffff;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 
 /* We work with
 Amazing Services */
 
-.service{
-    margin: 0 auto;
-    text-align: center;
+
+.section__title{
+    font: italic 24px 'Kaushan Script';
+    padding-top: 46px;
 }
 
-.service-iteam{
-    font: italic 24px Kaushan Script;
-}
-
-.service-iteam-text{
+.section__title_span{
     display: block;
-    font: bold 30px Montserrat;
+    font: 700 30px 'Montserrat';
     margin-bottom: 65px;
 }
 
-.service-iteam-text::after{
+.section__title_after::after{
     content: '';
     background-color: #f38181;
     margin: 0 auto;
@@ -128,122 +177,95 @@ Amazing Services */
     margin-top: 45px;
 }
 
-.service-list{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    text-align: left;
-    
-    
-}
+/* section-list */
 
-.service-list li{
-    width: 355px;
-    padding-left: 30px;
-    margin-bottom: 103px;
-    vertical-align: top;
+.list__element{
+    padding-bottom: 100px;
 }
-
-.service-list-title{
+.list__title{
     padding-bottom: 20px;
     text-transform: uppercase;
     font: 400 14px Montserrat;
     color: #333333;
+    margin: 0;
     
 }
-.service-list-alarm p{
+.list__text{
     font: 400 15px Roboto;
+    color: #999999;
+    padding-right: 80px;
+    margin: 0;
+}
+.list{
+    flex-wrap: wrap;
+    
+}
+.list__element{
+    max-width: 33.3%;
+    }
+
+
+.list__element_alarm{
+    list-style-image: url(../img/ALARM.svg);
+    
 }
 
-.service-list-alarm{
-    list-style-image: url(../img/ALARM.png);
-    
-}
-
-.service-list-book{
-    list-style-image: url(../img/BOOK\ 2.png);
+.list__element_book{
+    list-style-image: url(../img/BOOK.svg);
     
     
 }
-.service-list-line{
-    list-style-image: url(../img/LINE.png);
+.list__element_line{
+    list-style-image: url(../img/LINE.svg);
     
 }
-.service-list-home{
-    list-style-image: url(../img/HOME.png);
+.list__element_home{
+    list-style-image: url(../img/HOME.svg);
     
 }
-.service-list-computer{
-    list-style-image: url(../img/COMPUTER\ .png);
+.list__element_computer{
+    list-style-image: url(../img/COMPUTER.svg);
     
 }
-.service-list-img{
-    list-style-image: url(../img/IMAGE.png);
+.list__element_img{
+    list-style-image: url(../img/IMAGE.svg);
     
 }
 
 /* Team */
 
-.team{
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 86px;
-}
-
-.team-iteam{
-    font: italic 24px Kaushan Script;
-}
-
-.team-iteam-text{
-    display: block;
-    font: bold 30px Montserrat;
-    margin-bottom: 45px;
-}
-
-.team-iteam-text::after{
-    content: '';
-    background-color: #f38181;
-    margin: 0 auto;
-    width: 60px;
-    height: 3px;
-    bottom: 100px;
-    display: block;
-    margin-top: 45px;
-}
-
-.team-iteam-liric{
+.section__item{
     width: 980px;
     text-align: center;
     margin: 0 auto;
     font: 400 15px Roboto;
+    padding-bottom: 96px;
 }
 
-.team-list{
-    display: flex;
+.list{
+    
     justify-content: space-between;
-    margin-top: 96px;
-    list-style: none;
     padding: 0;
+    list-style: none;
+    
 }
 
 
-.team-list-foto-person{
+.list__title_mod{
     padding-top: 30px;
-    font: 400 14px Montserrat;
-    text-transform: uppercase;
-}
-.team-list-foto-text{
+    }
+.list__text_mod{
     font: italic 15px Roboto;
-    color: #999999
+    padding: 0;
+    margin: 0 auto;
 }
 
 /* hover-effect */
 
-.relative{
+.list__element_relative{
     position: relative;
 }
-.hover-effect{
+.list__element_hover{
     position: absolute;
     left: 0;
     right: 0;
@@ -254,7 +276,7 @@ Amazing Services */
     opacity: 0;
     }
 .social{
-    display: flex;
+    /* display: flex; */
     list-style: none;
     width: 100%;
     height: 470px;
@@ -265,7 +287,7 @@ Amazing Services */
 }
 
 
-.social li,.social-link{
+.social__item,.social__link{
     border: 0.1px solid rgb(243,129,129);
     width: 55px;
     height: 55px;
@@ -275,27 +297,26 @@ Amazing Services */
     background-color: rgb(252, 227, 138);
 }
 
-.facebook{
-        background-image: url(../img/facebook.png);
+.social__link_facebook{
+        background-image: url(../img/facebook.svg);
 }
 
-.twitter{
-    background-image: url(../img/twitter.png);
+.social__link_twitter{
+    background-image: url(../img/twitter.svg);
 }
-.pinterest{
-    background-image: url(../img/pinterest.png);
+.social__link_pinterest{
+    background-image: url(../img/pinterest.svg);
 }
-.instagram{
-    background-image: url(../img/instagram.png);
+.social__link_instagram{
+    background-image: url(../img/instagram.svg);
 }
-
-.team-list-foto:hover .hover-effect{
+.list__element:hover .list__element_hover{
     transition-timing-function: linear;
     transition-duration: 200ms;
     opacity: 1;
 }
 
-.hover-effect:hover{
+.list__element_hover:hover{
     box-shadow:
     10px 10px rgb(149, 225, 211);
     transform: translateY(-10px);
@@ -305,7 +326,7 @@ Amazing Services */
     left: -10px;
     
 }
-.social-link:hover{
+.social__link:hover{
     background-color:rgb(149, 225, 211);
     transition-timing-function: linear;
     transition-duration: 200ms;
@@ -357,28 +378,17 @@ input[type="text"]{
     transition: color .2s;
     }
     
-    .footer-text{
+    .footer__text{
         font: 400 14px Montserrat;
         padding-top: 10px
     }
 
-    .footer-text-color{
+    .footer__text_color{
         color: #f38181;
     }
     
 
 
 
-.picture {
-  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 1000px;
-  z-index: 3;
-}
 
 

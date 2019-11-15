@@ -1,6 +1,52 @@
 
-page-header
+container
+text
+link
+flex
+section
+m0
 
-page-nav
+page-header
+    page-header__container
 site-logo
+    site-logo__link
+        site-logo_decoration
 site-navigation
+        site-navigation_hover
+    site-navigation__link
+        site-navigation__link_relative 
+page-header__title
+        page-header__title_creative
+page-header__title2
+        page-header__title2_welcome
+page-header__btn
+        page-header__btn_learn        
+section__title
+        section__title_span
+        section__title_after
+section__item
+list
+        list__element
+             list__element_alarm 
+             list__element_book
+             list__element_line
+             list__element_home
+             list__element_computer
+             list__element_img
+             list__element_relative
+        list__title  
+                list__title_mod
+                
+        list__text
+                list__text_mod
+        list__foto
+social
+        social__item
+        social__link
+                social__link_facebook
+                social__link_twitter
+                social__link_pinterest
+                social__link_instagram
+footer
+        footer__text
+                footer__text_color
