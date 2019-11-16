@@ -1,10 +1,18 @@
+html {box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {box-sizing: inherit;
+}
+
 .container{max-width: 1201px; margin: 0 auto;    padding: 0;    
 }
 
 h2{ margin: 0; padding: 0;
 }
 
-.link{display: block;text-decoration: none;  list-style: none; text-transform: uppercase;    color: #ffffff;
+.link{display: block;text-decoration: none;  list-style: none; text-transform: uppercase;    color: var(--color-white);
 }
 
 .text{text-align: center;display: block;    margin: 0 auto;
@@ -17,4 +25,7 @@ h2{ margin: 0; padding: 0;
 }
 
 .m0{margin: 0;
+}
+
+:root{--color-white: #ffffff; --color-yelow: #fce38a;--color-text: #999; --color-list-title: #333;--color-pink:#f38181;--color-social-hover: #95e1d3; --color-footer: #e5e5e5; --color-footer-border: #e7e7e7;
 }

@@ -396,6 +396,16 @@ template {
   font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .container {
   max-width: 1201px;
   margin: 0 auto;
@@ -412,7 +422,7 @@ h2 {
   text-decoration: none;
   list-style: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .text {
@@ -432,6 +442,17 @@ h2 {
 
 .m0 {
   margin: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-yelow: #fce38a;
+  --color-text: #999;
+  --color-list-title: #333;
+  --color-pink: #f38181;
+  --color-social-hover: #95e1d3;
+  --color-footer: #e5e5e5;
+  --color-footer-border: #e7e7e7;
 }
 
 .page-header {
@@ -457,7 +478,7 @@ h2 {
 }
 
 .site-navigation__link:hover {
-  color: #fce38a;
+  color: var(--color-yelow);
   text-decoration: none;
   transition-timing-function: linear;
   transition-duration: 200ms;
@@ -465,8 +486,8 @@ h2 {
 
 .site-navigation_hover:hover::after {
   content: '';
-  background-color: #fce38a;
-  border: 2px solid #fce38a;
+  background-color: var(--color-yelow);
+  border: 2px solid var(--color-yelow);
   position: absolute;
   width: 100%;
   height: 4px;
@@ -492,7 +513,7 @@ h2 {
 .page-header__title_creative {
   font-family: 'Kaushan Script';
   font-size: 72px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .page-header__title2_welcome {
@@ -500,7 +521,7 @@ h2 {
   font-size: 150px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-white);
   max-width: 821px;
   padding-top: 45px;
   padding-bottom: 125px;
@@ -510,12 +531,12 @@ h2 {
   width: 160px;
   height: 40px;
   background: none;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--color-white);
   font-size: 14px;
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-white);
   cursor: pointer;
 }
 
@@ -532,7 +553,7 @@ h2 {
 
 .section__title_after::after {
   content: '';
-  background-color: #f38181;
+  background-color: var(--color-pink);
   margin: 0 auto;
   width: 60px;
   height: 3px;
@@ -551,14 +572,14 @@ h2 {
   padding-bottom: 20px;
   text-transform: uppercase;
   font: 400 14px Montserrat;
-  color: #333333;
+  color: var(--color-list-title);
   margin: 0;
   text-align: left;
 }
 
 .list__text {
   font: 400 15px Roboto;
-  color: #999999;
+  color: var(--color-text);
   padding-right: 80px;
   margin: 0;
   text-align: left;
@@ -573,27 +594,27 @@ h2 {
 }
 
 .list__element--alarm {
-  list-style-image: url(../images/icons/ALARM.svg);
+  list-style-image: url(../images/ALARM.svg);
 }
 
 .list__element--book {
-  list-style-image: url(../images/icons/BOOK.svg);
+  list-style-image: url(../images/BOOK.svg);
 }
 
 .list__element--line {
-  list-style-image: url(../images/icons/LINE.svg);
+  list-style-image: url(../images/LINE.svg);
 }
 
 .list__element--home {
-  list-style-image: url(../images/icons/HOME.svg);
+  list-style-image: url(../images/HOME.svg);
 }
 
 .list__element--computer {
-  list-style-image: url(../images/icons/COMPUTER.svg);
+  list-style-image: url(../images/COMPUTER.svg);
 }
 
 .list__element--img {
-  list-style-image: url(../images/icons/IMAGE.svg);
+  list-style-image: url(../images/IMAGE.svg);
 }
 
 .section__item {
@@ -638,6 +659,15 @@ h2 {
   opacity: 0;
 }
 
+.list__element_hover:hover {
+  box-shadow: 10px 10px var(--color-social-hover);
+  transform: translateY(-10px);
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  position: absolute;
+  left: -10px;
+}
+
 .social {
   list-style: none;
   width: 100%;
@@ -645,34 +675,41 @@ h2 {
   padding: 0;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
+  background: linear-gradient(0deg, var(--color-yelow) 0%, var(--color-pink) 100%);
 }
 
 .social__item,
 .social__link {
-  border: 0.1px solid #f38181;
+  border: 0.1px solid var(--color-pink);
   width: 55px;
   height: 55px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: block;
-  background-color: #fce38a;
+  background-color: var(--color-yelow);
+}
+
+.social__item:hover,
+.social__link:hover {
+  background-color: var(--color-social-hover);
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 
 .social__link--facebook {
-  background-image: url(../images/icons/facebook.svg);
+  background-image: url(../images/facebook.svg);
 }
 
 .social__link--twitter {
-  background-image: url(../images/icons/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
 
 .social__link--pinterest {
-  background-image: url(../images/icons/pinterest.svg);
+  background-image: url(../images/pinterest.svg);
 }
 
 .social__link--instagram {
-  background-image: url(../images/icons/instagram.svg);
+  background-image: url(../images/instagram.svg);
 }
 
 .list__element:hover .list__element_hover {
@@ -681,23 +718,8 @@ h2 {
   opacity: 1;
 }
 
-.list__element_hover:hover {
-  box-shadow: 10px 10px #95e1d3;
-  transform: translateY(-10px);
-  transition-timing-function: linear;
-  transition-duration: 200ms;
-  position: absolute;
-  left: -10px;
-}
-
-.social__link:hover {
-  background-color: #95e1d3;
-  transition-timing-function: linear;
-  transition-duration: 200ms;
-}
-
 .footer {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--color-footer);
   display: flex;
   justify-content: space-between;
   padding: 11px 0;
@@ -706,8 +728,8 @@ h2 {
 form {
   border-style: solid;
   border-width: 1px;
-  border-color: #e7e7e7;
-  background-color: white;
+  border-color: var(--color-footer-border);
+  background-color: var(--color-white);
   width: 380px;
   height: 40px;
 }
@@ -734,8 +756,8 @@ button[type="submit"] {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 40px;
-  color: #ffffff;
-  background-color: #95e1d3;
+  color: var(--color-white);
+  background-color: var(--color-social-hover);
   cursor: pointer;
   transition: color .2s;
 }
@@ -746,7 +768,7 @@ button[type="submit"] {
 }
 
 .footer__text_color {
-  color: #f38181;
+  color: var(--color-pink);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

@@ -4,7 +4,7 @@
 .section__title_span{display: block;font: 700 30px 'Montserrat'; margin-bottom: 65px;
 }
 
-.section__title_after::after{content: '';    background-color: #f38181; margin: 0 auto;    width: 60px; height: 3px; bottom: 100px;    display: block; margin-top: 45px;
+.section__title_after::after{content: '';    background-color: var(--color-pink); margin: 0 auto;    width: 60px; height: 3px; bottom: 100px;    display: block; margin-top: 45px;
 }
 
 /* section-list */
@@ -12,10 +12,10 @@
 .list__element{ padding-bottom: 100px;
 }
 
-.list__title{padding-bottom: 20px;    text-transform: uppercase; font: 400 14px Montserrat; color: #333333; margin: 0;    text-align: left;    
+.list__title{padding-bottom: 20px;    text-transform: uppercase; font: 400 14px Montserrat; color: var(--color-list-title); margin: 0;    text-align: left;    
 }
 
-.list__text{font: 400 15px Roboto;color: #999999; padding-right: 80px; margin: 0; text-align: left;
+.list__text{font: 400 15px Roboto;color: var(--color-text); padding-right: 80px; margin: 0; text-align: left;
 }
 
 .list{flex-wrap: wrap;    
@@ -23,20 +23,20 @@
 
 .list__element{max-width: 33.3%;}
 
-.list__element--alarm{list-style-image: url(../images/icons/ALARM.svg);    
+.list__element--alarm{list-style-image: url(../images/ALARM.svg);    
 }
 
-.list__element--book{list-style-image: url(../images/icons/BOOK.svg);    
+.list__element--book{list-style-image: url(../images/BOOK.svg);    
 }
 
-.list__element--line{list-style-image: url(../images/icons/LINE.svg);   
+.list__element--line{list-style-image: url(../images/LINE.svg);   
 }
 
-.list__element--home{list-style-image: url(../images/icons/HOME.svg);    
+.list__element--home{list-style-image: url(../images/HOME.svg);    
 }
 
-.list__element--computer{list-style-image: url(../images/icons/COMPUTER.svg);    
+.list__element--computer{list-style-image: url(../images/COMPUTER.svg);    
 }
 
-.list__element--img{list-style-image: url(../images/icons/IMAGE.svg);
+.list__element--img{list-style-image: url(../images/IMAGE.svg);
 }
