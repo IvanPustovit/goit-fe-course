@@ -171,8 +171,12 @@ Amazing Services */
 .section__title{
     font: italic 24px 'Kaushan Script';
     padding-top: 46px;
+    
 }
 
+.section__title--pading{
+        padding-top: 0;
+    }
 .section__title_span{
     display: block;
     font: 700 30px 'Montserrat';
@@ -214,37 +218,25 @@ Amazing Services */
 }
 .list{
     flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
     
 }
 .list__element{
+    position: relative;
     max-width: 33.3%;
+    
     }
 
-
-.list__element--alarm{
-    list-style-image: url(../img/ALARM.svg);
-    
+.icon{
+    width: 36px;
+    height: 36px;
 }
 
-.list__element--book{
-    list-style-image: url(../img/BOOK.svg);
-    
-    
-}
-.list__element--line{
-    list-style-image: url(../img/LINE.svg);
-    
-}
-.list__element--home{
-    list-style-image: url(../img/HOME.svg);
-    
-}
-.list__element--computer{
-    list-style-image: url(../img/COMPUTER.svg);
-    
-}
-.list__element--img{
-    list-style-image: url(../img/IMAGE.svg);
+
+.list__element--alarm, .list__element--book, .list__element--line, .list__element--home, .list__element--computer, .list__element--img{
+    position: absolute;
+    left: -60px;
     
 }
 
@@ -300,7 +292,7 @@ Amazing Services */
     padding: 0;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%)
+    background: linear-gradient(0deg, #fce38a 0%, rgb(243,129,129) 100%)
 }
 
 
@@ -314,7 +306,19 @@ Amazing Services */
     background-color: rgb(252, 227, 138);
 }
 
-.social__link--facebook{
+.social__link{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    
+}
+/* .social__link--facebook{
         background-image: url(../img/facebook.svg);
 }
 
@@ -326,7 +330,7 @@ Amazing Services */
 }
 .social__link--instagram{
     background-image: url(../img/instagram.svg);
-}
+} */
 .list__element-card:hover .list__element_hover{
     transition-timing-function: linear;
     transition-duration: 200ms;
@@ -335,7 +339,7 @@ Amazing Services */
 
 .list__element_hover:hover{
     box-shadow:
-    10px 10px rgb(149, 225, 211);
+    10px 10px #95e1d3;
     transform: translateY(-10px);
     transition-timing-function: linear;
     transition-duration: 200ms;
@@ -352,7 +356,7 @@ Amazing Services */
 /* FOOTER */
 
 .footer{
-    border-top: 1px solid rgb(229, 229, 229);
+    border-top: 1px solid #e5e5e5;
     display: flex;
     justify-content: space-between;
     padding: 11px 0;
@@ -360,8 +364,8 @@ Amazing Services */
 form{
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(231, 231, 231);
-    background-color: rgb(255, 255, 255);
+    border-color: #e7e7e7;
+    background-color: #ffffff;
     width: 380px;
     height: 40px;
     
@@ -390,7 +394,7 @@ input[type="text"]{
     text-transform: uppercase;
     line-height: 40px;
     color: #ffffff;
-    background-color: rgb(149, 225, 211);
+    background-color: #95e1d3;
     cursor: pointer;
     transition: color .2s;
     }
